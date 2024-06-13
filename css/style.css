@@ -1,0 +1,353 @@
+/*fuentes
+font-family: "Noto Sans", sans-serif;
+font-family: "Roboto Slab", serif;
+*/
+
+
+body{background-color: whitesmoke;
+margin: 0%;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+text-align: left;
+overflow-x: hidden;
+}
+
+
+.header{
+    background-color: whitesmoke;
+    color: rgb(4, 10, 15);
+    font-family: "Roboto Slab", serif;
+}
+@media (max-width: 1024px) {
+    .header {
+        background-color: rgb(252, 222, 227);
+    }
+}
+
+/* Estilos para pantallas de 768px */
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Estilos para pantallas de 425px */
+@media (max-width: 425px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.headerindex ul li a{
+    color: rgb(4, 10, 15);
+    font-family: "Roboto Slab", serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+}
+@media (max-width: 1024px) {
+    .barra {
+        background-color:rgb(252, 222, 227);
+    }
+}
+@media (max-width: 768px) {
+    .barra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 425px) {
+    .barra {
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+ul{list-style-type: none;}
+ul{display: flex;}
+ul{padding: 0%;}
+li{margin-right: 15px;}
+
+h1{text-align: center;
+    font-family: "Noto Sans", sans-serif;}
+h1{text-transform: capitalize;}
+
+
+.encabezado2{
+    text-align: center;
+    text-transform: initial;
+    font-family: "Roboto Slab", serif;
+}
+.enviar{
+    background: none;
+    color: whitesmoke;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.encabezado{
+    width: 100%;
+    height: 31.25rem;
+    color: whitesmoke;
+    background-image: url("https://strange.com.ar/img/hero.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+}
+
+section{
+    background-color: whitesmoke;
+    color: rgb(4, 10, 15);
+}
+
+.shop h2{
+    font-family: "Noto Sans", sans-serif;
+}
+
+.shop p{
+    font-family: "Roboto Slab", serif;
+}
+.shop .imgshop{ 
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 30%; /* Establece la altura máxima de la imagen al 100% del contenedor */
+    width: 100%; /* Permite que la imagen mantenga su relación de aspecto */
+    height: 100%; /* Permite que la imagen mantenga su relación de aspecto */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */}
+
+.botonTienda{
+    background: none;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.taproom{
+    font-family: "Noto Sans", sans-serif
+    
+}
+.taproom h2{
+    width: 100%;
+    height: 31.25rem;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 60px;
+    background-image: url("https://strange.com.ar/img/taproom-cover.jpg");
+}
+.somos h2{
+    font-family: "Noto Sans", sans-serif;
+}
+.somos h3{
+    font-family: "Noto Sans", sans-serif;
+}
+.somos p{
+    font-family: "Roboto Slab", serif;
+}
+.contacto{
+    font-family: "Noto Sans", sans-serif;
+}
+.contacto p{ 
+    font-family: "Roboto Slab", serif;
+}
+.dias{
+    text-transform: uppercase;
+    text-decoration: underline dotted;
+}
+
+.contactoboton{
+    background: none;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+.ubicacion{
+    background: none;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.barra{
+    display: flex;
+    gap: 1.25rem;
+}
+
+.tienda{ padding: 20px;}
+.somos { padding: 20px;}
+.contacto{ padding: 20px;}
+
+.imagenestienda{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.25rem;
+    
+}
+.imagenestienda div {
+    width: 30%;
+    box-sizing: border-box;
+}
+.imagenestienda img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .imagenestienda div {
+        width: 45%; /* Ajusta el ancho para pantallas medianas */
+    }
+}
+@media (max-width: 768px) {
+    .imagenestienda {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagenestienda div {
+        width: 80%; /* Ajusta el ancho para pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .imagenestienda div {
+        width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    }
+}
+
+.comida {
+    display: grid;
+    width: 100%;
+    flex: 1; /* Hace que el contenedor ocupe todo el espacio disponible */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: .25rem;
+    gap: .25rem;
+}
+
+.comida img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comida .img1 {
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+}
+
+
+.comida .img2 {
+    grid-column: 1 / 3;
+    grid-row: 3/5;
+}
+
+.comida .img3 {
+    grid-column: 1 / 3;
+    grid-row: 5/7;
+}
+.comida .img4{
+    grid-column: 3/5;
+    grid-row: 1/5;
+}
+
+.comida .img5{
+    grid-column: 3/5;
+    grid-row: 5/7;
+}
+
+@media (max-width: 1024px) {
+    .comida img {
+        width: 30%; /* Ajusta el ancho para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .comida {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comida img {
+        width: 80%; /* Ajusta el ancho para pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .comida img {
+        width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    }
+}
+
+.footercomida {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+footer{ 
+    background-color: rgb(4, 10, 15);
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    font-size: 10px;
+}
+@media (max-width: 1024px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .footer h4, .footer h5 {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer {
+        padding: 5px;
+    }
+
+    .footer button {
+        width: 100%; 
+        padding: 5px 0;
+        font-size: 0.8em;
+    }
+
+    .footer h4, .footer h5 {
+        font-size: 0.8em;
+    }
+}
