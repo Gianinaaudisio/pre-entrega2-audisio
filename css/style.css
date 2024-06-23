@@ -84,7 +84,7 @@ li {
 }
 
 .headerindex .barra li a:hover {
-    background-color: #fbc0c0;
+    background-color: #bfbfbf;
     color: #2b1e1e;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
